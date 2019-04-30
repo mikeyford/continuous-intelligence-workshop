@@ -2,6 +2,7 @@ from enum import Enum
 import numpy as np
 import pandas as pd
 import sys, os, json
+
 from sklearn.preprocessing import LabelEncoder
 from sklearn.externals import joblib
 sys.path.append(os.path.join('..', 'src'))
@@ -137,4 +138,4 @@ def main(model=Model.DECISION_TREE, seed=None):
 
 
 if __name__ == "__main__":
-    main(model=Model.DECISION_TREE, seed=8675309)
+    main(model=Model.RANDOM_FOREST, seed=8675309)
